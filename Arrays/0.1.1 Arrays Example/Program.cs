@@ -22,6 +22,8 @@ array5 = new int[10];
 Array myArray = Array.CreateInstance(typeof(int), 5);
 
 
+int[] array6 = [1, 2, 3];
+
 //--------- ARRAYS BIDIMENSIONALES/MATRICES ---------
 // Forma 1: Declaracion y asignacion en una linea sin valores iniciales
 // NO EXISTE LA FORMA 1; ya que el array debe ser declarado con un tamanio inicial
