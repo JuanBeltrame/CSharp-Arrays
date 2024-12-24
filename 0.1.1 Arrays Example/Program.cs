@@ -1,34 +1,40 @@
-﻿//--------- ARRAYS UNIDIMENSIONALES ---------
-// Los arrays en C# son objetos, por lo tanto ademas, son tipos de referencia. 
+﻿//-----------Programa Principal-----------------
+// ---------------------------------------------
+// Ejemplo 01 
+// 3 Filas / 3 Columnas
+int[,] array2D = { { 1, 2, 9 }, { 3, 4, 8 }, { 5, 6, 5 } };
 
-// Forma 1: Declaracion y asignacion en una linea sin valores iniciales
-// Usando Collection Expressions
-int[] array01 = [];
+Console.Write(array2D.Length);
+Console.Write(array2D.Rank);
+Console.Write(array2D.GetLength(0));
 
-// Forma 2: Declaracion y asignacion en una linea sin valores iniciales con capacidad especificada;
-int[] array02 = new int[10];
+int[] array = { 1, 2, 3, 4, 5 };
 
-// o bien, 
-int tamanio = 30;
-int[] array03 = new int[tamanio];
+for (int i = 0; i < array.Length; i++)
+{
+    Console.Write(array[i]+" ");
+}
 
-//Forma 3: Declaracion e inicializacion en una sola linea con elementos
-int[] array04 = { 1, 2, 3, 4, 5 };
-string[] nombres = { "Juan", "Pepe", "Lucia" };
+Array.Reverse(array);
 
-// Forma 4: Declaracion e inicializacion en varias Lineas
-int[] array05;
-array05 = new int[10];
+for (int i = 0; i < array.Length; i++)
+{
+    Console.Write(array[i]+" ");
+}
 
-// Forma 5: Usando Array.CreateInstance;
-Array myArray = Array.CreateInstance(typeof(int), 5);
+// ---------------------------------------------
+// Ejemplo 02
+int[] numeros = new int[6];
 
+numeros[0] = 1;
+numeros[1] = 10;
+numeros[2] = 14;
+numeros[3] = 7;
+numeros[4] = 20;
+numeros[5] = 45;
 
-int[] array06 = [1, 2, 3];
-
-
-
-//--------- ARRAYS BIDIMENSIONALES/MATRICES ---------
-// Forma 1: Declaracion y asignacion en una linea sin valores iniciales
-// NO EXISTE LA FORMA 1; ya que el array debe ser declarado con un tamanio inicial
+for (int i = 0; i < numeros.Length; i++)
+{
+    Console.Write(numeros[i]+" ");
+}
 
